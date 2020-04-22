@@ -3,6 +3,8 @@ const bodyParser=require('body-parser');
 const ejs=require('ejs');
 require('dotenv').config();
 
+var port=process.env.PORT || 8080;
+
 // const homeContent;
 // const aboutContent;
 
@@ -20,6 +22,9 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static('public'));
 
 
-app.listen(process.env.PORT || 8080, ()=>{
+
+
+
+app.listen(port, ()=>{
     console.log("Server Up At "+port);
 });
