@@ -1,7 +1,15 @@
 <%- include('header'); -%>
 <div class="blog-container">
-  <div class="col-md-9">
+  <div class="col-md-12">
 
+    <div class="jumbotron  jumbotron-fluid post-container latest-posts-container">
+      <div class="container">
+        <h1 class="display-4 post-title latest-posts-hero">
+          Latest Posts
+          <hr>
+        </h1>
+      </div>
+    </div>
 
     <% for(var i=0;i<posts.length;i++){ %>
     <div class="jumbotron  jumbotron-fluid post-container">
