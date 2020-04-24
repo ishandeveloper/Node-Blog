@@ -15,139 +15,32 @@
     --white-color: #fff;
     --hero-color: black;
 }
-.work-hero-card{
-    display: block;
-    margin:0 auto;
-    width:80%;
-    background: #fff;
-    align-items: center;
-    padding:0;
-    /* border-radius: 10px; */
-    padding-bottom: 15px;
-    /* border:1px solid #44444450; */
-    box-shadow: 1px 1px 20px #00000025;
-    cursor: pointer;
-    transition: all 1s;
-    height: 100%;
-    
-}
-#work-text{
-    text-align: center;
-    font-size: 1.5em;
-}
-.work-hero-card h1{
-    padding-top: 20px;
-    text-align: center;
-    font-size: 0.8em;
-    font-weight: bold;
-}
-.work-hero-card:hover{
-    width:85%;
-    box-shadow: 0px 0px 20px #88888875;
-    animation:zoom 1s;
-    /* filter: none; */
-}
-.work-card-hero-img{
-    width:100%;
-    display: block;
-    /* border:1px solid #44444450; */
-    /* border-radius: 10px; */
-    border-bottom: none;
-    margin:0 auto;
-    left:0;
-    right: 0;
-}
-.work-double-row{
-    padding-left:120px;
-    padding-right: 120px;
-    margin-top: 80px;
-}
-.project-star {
-    position: absolute;
-    background: #ffff0080;
-    border-radius: 50px;
-    padding: 2px 6px;
-    font-size: 0.8em;
-    top: 40px;
-    right: 0;
-}
-
-.project-star-mobile {
-    display: none;
-    background: #ffff0080;
-    border-radius: 50px;
-    padding: 2px 6px;
-    width: 50%;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 0.8em;
-
-}
-
-#work-row {
-    padding-left: 135px;
-    padding-right: 135px;
-    width: 100vw;
-}
-
-.work-hero {
-    /* border:2px solid #444; */
-    border-radius: 10px;
-    /* box-shadow: 0px 0px 5px #444; */
-    width: 90%;
-    transition: width 1s;
-}
-.work-hero:hover{
-    width: 95%;
-}
-
-.work-des {
-    padding-top: 40px;
-
-}
-
-.work-des h1 {
-    font-weight: bold;
-}
-
-.work-des p {
-    text-align: justify;
-    font-weight: 100;
-}
-
-.work-hero-img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.technologies h2 {
-    font-size: 0.8em;
-    font-weight: bold;
-}
-
-.tech-stack {
-    cursor: pointer;
-    margin-right: 10px;
-    background: #f2f2f2;
-    padding: 2px 4px;
-    font-size: 0.8em;
-    transition: background 1s;
-}
-
-.tech-stack:hover {
-    background: beige;
-}
 
 .featured {
     margin-top: 10px;
 }
-
+.read-more{
+    float: right;
+    color:#444;
+    background:white;
+    border:1px solid #444;
+    padding:4px 10px;
+    transition: all 1s;
+}
+.read-more:hover{
+    color:white;
+    background:#444;
+}
 .partners {
     /* background:#f2f2f2; */
     height: 50px;
     margin-right: 20px;
 }
-
+.blog-container{
+    position: absolute;
+    margin-top: 10vh;
+    margin-left:110px;
+}
 #partner-logo {
     height: 40px;
     cursor: pointer;
@@ -157,7 +50,38 @@
 #partner-logo:hover {
     box-shadow: 0px 0px 10px #444;
 }
-
+.post-container{
+    background: white;
+    padding-bottom: 0;
+    
+}
+.post-title{
+    font-size: 2em;
+    color:black;
+    font-weight: bold;
+}
+.post-content
+{
+    text-align: justify;
+    font-size: 1.2em;
+}
+.nav-title{
+    padding:10px 0px;
+    text-align:left;
+    display: block;
+    font-size: 2em;
+    color:#444;
+    text-decoration: none;
+    transition: all 1s;
+}
+.nav-title:hover{
+    color:black;
+    text-decoration: none;
+}
+.nav-title span{
+    margin-top: -20px;
+    font-size: 20px;
+}
 .work-read {
     float: right;
     font-size: 0.8em;
@@ -278,15 +202,29 @@ li span a:hover {
     padding-right: 13vw;
     letter-spacing: 0.8px;
 }
-
+.post-details{
+    width:100%;
+    margin-left: 0px;
+    display:block;
+}
+.post-published{
+    float: left;
+    font-size: 1em;
+}
+.date{
+    color:black;
+    font-weight: bold;
+}
 .nav-desk {
     height: 10vh;
-    /* position: fixed; */
+    background: white;
+    z-index: 100;
+    position: fixed;
     display: block;
     width: 80vw;
     margin: auto;
-
-    margin-top: 20px;
+    padding:20px 0px;
+    /* margin-top: 20px; */
     left: 0;
     right: 0;
     /* background: black; */
@@ -732,6 +670,18 @@ li span:hover:after {
     .nav-items {
         width: 0;
         height: 0;
+        display: none;
+    }
+    .nav-desk{
+        display: none;
+    }
+    .blog-container{
+        margin-left:10px;
+    }
+    .post-content{
+        text-align: justify;
+    }
+    .nav-title{
         display: none;
     }
     .work-double-row{
