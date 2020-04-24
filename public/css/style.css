@@ -19,28 +19,33 @@
 .featured {
     margin-top: 10px;
 }
-.read-more{
+
+.read-more {
     float: right;
-    color:#444;
-    background:white;
-    border:1px solid #444;
-    padding:4px 10px;
+    color: #444;
+    background: white;
+    border: 1px solid #444;
+    padding: 4px 10px;
     transition: all 1s;
 }
-.read-more:hover{
-    color:white;
-    background:#444;
+
+.read-more:hover {
+    color: white;
+    background: #444;
 }
+
 .partners {
     /* background:#f2f2f2; */
     height: 50px;
     margin-right: 20px;
 }
-.blog-container{
+
+.blog-container {
     position: absolute;
     margin-top: 10vh;
-    margin-left:110px;
+    margin-left: 110px;
 }
+
 #partner-logo {
     height: 40px;
     cursor: pointer;
@@ -50,46 +55,54 @@
 #partner-logo:hover {
     box-shadow: 0px 0px 10px #444;
 }
-.post-container{
+
+.post-container {
     background: white;
     padding-bottom: 0;
-    
+
 }
-.post-title{
+
+.post-title {
     font-size: 1.5em;
-    color:black;
+    color: black;
     /* font-weight: bold; */
 }
-.latest-posts-hero{
+
+.latest-posts-hero {
     font-weight: bold;
     /* margin-bottom: -5vh  ; */
 }
-.latest-posts-container{
+
+.latest-posts-container {
     padding-bottom: 0;
     margin-bottom: -15px;
 }
-.post-content
-{
+
+.post-content {
     text-align: justify;
     font-size: 1.2em;
 }
-.nav-title{
-    padding:10px 0px;
-    text-align:left;
+
+.nav-title {
+    padding: 10px 0px;
+    text-align: left;
     display: block;
     font-size: 2em;
-    color:#444;
+    color: #444;
     text-decoration: none;
     transition: all 1s;
 }
-.nav-title:hover{
-    color:black;
+
+.nav-title:hover {
+    color: black;
     text-decoration: none;
 }
-.nav-title span{
+
+.nav-title span {
     margin-top: -20px;
     font-size: 20px;
 }
+
 .work-read {
     float: right;
     font-size: 0.8em;
@@ -181,10 +194,11 @@ li span a:hover {
 .legal a:active {
     color: #444;
     text-decoration: none;
-    transition:all 0.5s;
+    transition: all 0.5s;
 }
-.legal a:hover{
-        color:red!important;
+
+.legal a:hover {
+    color: red !important;
 }
 
 .privacy-policy h1 {
@@ -214,19 +228,23 @@ li span a:hover {
     padding-right: 13vw;
     letter-spacing: 0.8px;
 }
-.post-details{
-    width:100%;
+
+.post-details {
+    width: 100%;
     margin-left: 0px;
-    display:block;
+    display: block;
 }
-.post-published{
+
+.post-published {
     float: left;
     font-size: 1em;
 }
-.date{
-    color:black;
+
+.date {
+    color: black;
     font-weight: bold;
 }
+
 .nav-desk {
     height: 10vh;
     background: white;
@@ -235,7 +253,7 @@ li span a:hover {
     display: block;
     width: 80vw;
     margin: auto;
-    padding:20px 0px;
+    padding: 20px 0px;
     /* margin-top: 20px; */
     left: 0;
     right: 0;
@@ -398,14 +416,15 @@ li span a:hover {
 
 .legal {
     position: inherit;
-    margin-top:10vh;
-    padding-bottom:25px;
+    margin-top: 10vh;
+    padding-bottom: 25px;
     /* bottom: 25px; */
     right: 25px;
-    font-size:0.8em;
+    font-size: 0.8em;
     transition: all 0.5s;
 }
-.legal:hover{
+
+.legal:hover {
     font-size: 1.2em;
 }
 
@@ -659,10 +678,12 @@ li span:hover:after {
     #hero-right {
         display: none;
     }
-    .work-double-row{
+
+    .work-double-row {
         padding-left: 30px;
         padding-right: 30px;
     }
+
     #index-body {
         background: url('assets/img/mobile.png');
         background-size: cover;
@@ -671,6 +692,7 @@ li span:hover:after {
         height: 100vh;
         width: 100vw;
     }
+
     /* .work-double-row{
         padding-left: 50px;
         padding-right: 50px;
@@ -686,38 +708,47 @@ li span:hover:after {
 
 
     /* For mobile phones: */
-    .legal{
-        display:none;
+    .legal {
+        display: none;
     }
+
     .nav-items {
         width: 0;
         height: 0;
         display: none;
     }
-    .nav-desk{
+
+    .nav-desk {
         display: none;
     }
-    .blog-container{
-        margin-left:10px;
+
+    .blog-container {
+        margin-left: 10px;
     }
-    .post-content{
+
+    .post-content {
         text-align: justify;
     }
-    .nav-title{
+
+    .nav-title {
         display: none;
     }
-    .work-double-row{
-        padding:30px 20px;
+
+    .work-double-row {
+        padding: 30px 20px;
         padding-bottom: 0;
     }
-    .work-hero-card{
-        width:100%;
+
+    .work-hero-card {
+        width: 100%;
         margin-bottom: 25px;
     }
-    #row-3{
+
+    #row-3 {
         margin-top: 0px;
-        padding:0 20px;
+        padding: 0 20px;
     }
+
     #index-body {
         background: url('assets/img/mobile.png');
         background-size: cover;
