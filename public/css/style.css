@@ -397,9 +397,11 @@ li span a:hover {
 
 
 .legal {
-    position: absolute;
-    bottom: 25px;
-    right: 110px;
+    position: inherit;
+    padding-top:50px;
+    padding-bottom:25px;
+    /* bottom: 25px; */
+    right: 25px;
     font-size:0.8em;
     transition: all 0.5s;
 }
@@ -682,7 +684,11 @@ li span:hover:after {
 
 @media only screen and (max-width: 768px) {
 
+
     /* For mobile phones: */
+    .legal{
+        display:none;
+    }
     .nav-items {
         width: 0;
         height: 0;
