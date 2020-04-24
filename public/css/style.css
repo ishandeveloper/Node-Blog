@@ -398,7 +398,7 @@ li span a:hover {
 
 .legal {
     position: inherit;
-    padding-top:50px;
+    margin-top:10vh;
     padding-bottom:25px;
     /* bottom: 25px; */
     right: 25px;
