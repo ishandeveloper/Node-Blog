@@ -1,14 +1,32 @@
 <%- include('header'); -%>
-    <div class="animated fadeIn row" style="width:105vw;animation-duration: 1.5s;">
-        <div class="col">
-            <% for(var i=0;i<posts.length;i++){ %>
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                  <h1 class="display-4"><%= title[i] %></h1>
-                  <p class="lead"><%= posts[i] %></p>
-                </div>
-              </div> 
-            <% } %>
+<div class="blog-container">
+  <div class="col-md-9">
+
+
+    <% for(var i=0;i<posts.length;i++){ %>
+    <div class="jumbotron  jumbotron-fluid post-container">
+      <div class="container">
+        <h1 class="display-4 post-title">
+          <%= title[i] %>
+        </h1>
+        <p class="lead post-content">
+
+          <%= posts[i] %>
+        </p>
+        <div class="row post-details">
+          <label class="post-published">Published On <span class="date">
+              1 Jan 2020
+            </span></label>
+          <button class="read-more">
+            Read More
+          </button>
         </div>
+      </div>
     </div>
+
+    <% } %>
+
+  </div>
+</div>
+
 <%- include('footer'); -%>
