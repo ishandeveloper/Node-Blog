@@ -56,9 +56,17 @@
     
 }
 .post-title{
-    font-size: 2em;
+    font-size: 1.5em;
     color:black;
+    /* font-weight: bold; */
+}
+.latest-posts-hero{
     font-weight: bold;
+    /* margin-bottom: -5vh  ; */
+}
+.latest-posts-container{
+    padding-bottom: 0;
+    margin-bottom: -15px;
 }
 .post-content
 {
@@ -160,7 +168,7 @@ li span a:hover {
 .legal-links {
     text-decoration: none;
     font-weight: bold;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .legal-links:hover {
@@ -173,6 +181,10 @@ li span a:hover {
 .legal a:active {
     color: #444;
     text-decoration: none;
+    transition:all 0.5s;
+}
+.legal a:hover{
+        color:red!important;
 }
 
 .privacy-policy h1 {
@@ -387,9 +399,13 @@ li span a:hover {
 .legal {
     position: absolute;
     bottom: 25px;
-    right: 25px;
+    right: 110px;
+    font-size:0.8em;
+    transition: all 0.5s;
 }
-
+.legal:hover{
+    font-size: 1.2em;
+}
 
 .hero-tag {
     margin-top: 20vh;
