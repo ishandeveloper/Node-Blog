@@ -1,0 +1,37 @@
+<%- include('partials/header'); -%>
+<div class="blog-container">
+  <div class="col-md-12">
+
+    <div class="jumbotron  jumbotron-fluid post-container latest-posts-container">
+      <div class="container">
+        <h1 class="display-4 post-title latest-posts-hero">
+          <!-- Latest Posts -->
+          <hr>
+        </h1>
+      </div>
+    </div>
+
+    <div class="jumbotron  jumbotron-fluid post-container">
+      <div class="container">
+        <h1 class="display-4 post-title">
+            <%= title %>
+        </h1>
+        <p class="lead post-content">
+            <%= content %>
+        </p>
+        <div class="row post-details">
+          <label class="post-published">Published On <span class="date">
+              1 Jan 2020
+            </span></label>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="legal">
+    <a href="http://www.ishandeveloper.com">Made with <span style="color:red">&hearts;</span> by ishandeveloper</a>
+</div>
+</div>
+
+<%- include('partials/footer'); -%>
