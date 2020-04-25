@@ -18,9 +18,16 @@
 
 .compose-input{
     width: 80vw;
-    height: 60vh;
+    height: 50vh;
     border:1px solid #444;
+    padding:3vh 2vw;
+    outline: none;
     border-radius: 5px;
+}
+.title-input{
+    height: auto;
+    padding:1vh 2vw;
+    margin-bottom: 15px;
 }
 .featured {
     margin-top: 10px;
@@ -46,7 +53,8 @@
     background: #444;
     border: 1px solid white;
     outline: none;
-    padding: 4px 20px;
+    padding: 8px 40px;
+    float:none;
 }
 .publish-btn:hover{
     color:#444;
@@ -63,6 +71,7 @@
     position: absolute;
     margin-top: 10vh;
     margin-left: 110px;
+    width:82vw;
 }
 .compose-container{
     margin-top:20vh;
@@ -755,6 +764,7 @@ li span:hover:after {
 
     .blog-container {
         margin-left: 10px;
+        width: 95vw;
     }
 
     .post-content {

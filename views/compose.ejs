@@ -1,20 +1,21 @@
 <%- include('partials/header'); -%>
 
 <div class="blog-container compose-container">
-    <div class="col-md-12">
-        <h1 class="post-title compose-hero">
-            Write Something ..
-        </h1>
-        <textarea type="text" class="compose-input">
-
-        </textarea>
-
-    </div>
-    <div class="col-md-12">
-        <button class="read-more publish-btn">
-            Publish
-          </button>
-    </div>
+    <form action="/compose" method="post">
+        <div class="col-md-12">
+            <h1 class="post-title compose-hero">
+                Write Something ..
+            </h1>
+            <input type="text" name="title" class="compose-input title-input" placeholder="Your post title"/>
+            <textarea placeholder="Your post content goes here...." name="post" type="text"
+                class="compose-input"></textarea>
+        </div>
+        <div class="col-md-12">
+            <button type="submit" class="read-more publish-btn">
+                Publish
+            </button>
+        </div>
+    </form>
 </div>
 
 <%- include('partials/footer'); -%>

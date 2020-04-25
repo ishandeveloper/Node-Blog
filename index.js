@@ -5,8 +5,10 @@ require('dotenv').config();
 
 var port = process.env.PORT || 8080;
 
-var posts = ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book... ", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book... "];
-var postTitles = ["First Blog Post", "Second Blog Post"];
+// var posts = ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book... ", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book... "];
+var posts=[];
+// var postTitles = ["First Blog Post", "Second Blog Post"];
+
 // const homeContent;
 // const aboutContent;
 
@@ -29,12 +31,22 @@ app.use('/public', express.static('public'));
 app.get('/', (req, res) => {
     res.render("home.ejs", {
         posts: posts,
-        title: postTitles
+        // title: posts
     });
 });
 
 app.get('/compose',(req,res)=>{
     res.render('compose.ejs');
+});
+
+app.post('/compose',(req,res)=>{
+    const post={
+        content:req.body.post,
+        title:req.body.title,
+    }
+    posts.push(post);
+    res.redirect('/');
+    // console.log(req.body.post);
 });
 
 app.listen(port, () => {
