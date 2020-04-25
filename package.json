@@ -4,7 +4,7 @@
   "description": "A fully fledged blog application",
   "main": "index.js",
   "scripts": {
-    "start":"nodemon index.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "dotenv": "^8.2.0",
     "ejs": "^3.0.2",
     "express": "^4.17.1",
+    "lodash": "^4.17.15",
     "nodemon": "^2.0.3"
   }
 }
