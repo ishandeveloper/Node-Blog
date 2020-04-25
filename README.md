@@ -5,7 +5,8 @@
 # Node Blog
 A fully fledged open source blog publishing application, built with ♥ using Node.js
 
-<pre>P.S. This Project Is Still In It's Initial Stages Of Development</pre>
+>P.S. This Project Is Still In It's Initial Stages Of Development
+<pre><a href="http://idevblog.herokuapp.com/">View Live Demo</a></pre>
 
 ### Routes
 
