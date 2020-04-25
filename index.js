@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
+const _ = require('lodash');
 require('dotenv').config();
 
 var port = process.env.PORT || 8080;
@@ -25,6 +26,16 @@ app.get('/', (req, res) => {
     res.render("home.ejs", {
         posts: posts,
         // title: posts
+    });
+});
+
+app.get('/posts/:activepost',(req,res)=>{
+    // console.log(req.params.activepost);
+    posts.forEach((post)=>{
+        if(_.lowerCase(post.title)==_.lowerCase(req.params.activepost)){
+            console.log("Matched !");
+            // break;
+        }
     });
 });
 
