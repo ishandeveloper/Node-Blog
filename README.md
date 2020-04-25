@@ -1,11 +1,17 @@
 [![HitCount](http://hits.dwyl.com/ishandeveloper/Node-Blog.svg)](http://hits.dwyl.com/ishandeveloper/Node-Blog)
 
-<img src="https://github.com/ishandeveloper/Node-Blog/blob/master/Screenshots/1.PNG?raw=false" width="100%">
+<img src="https://github.com/ishandeveloper/Node-Blog/blob/master/Screenshots/compose.gif?raw=false" width="100%">
 
 # Node Blog
 A fully fledged open source blog publishing application, built with ♥ using Node.js
 
 <pre>P.S. This Project Is Still In It's Initial Stages Of Development</pre>
+
+### Routes
+
+* <code>/</code> is the home page.
+* Navigate to <code>/compose</code> route to create a new post.
+* To read an individual post, navigate to <code>/posts/post-name</code>.
 
 ## Setup
 
