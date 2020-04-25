@@ -28,9 +28,7 @@ app.get('/', (req, res) => {
         // title: posts
     });
 });
-// app.get('/posts',(req,res)=>res.render('post.ejs'));
 app.get('/posts/:activepost',(req,res)=>{
-    // console.log(req.params.activepost);
     posts.forEach((post)=>{
         if(_.lowerCase(post.title)==_.lowerCase(req.params.activepost)){
             res.render('post.ejs',{

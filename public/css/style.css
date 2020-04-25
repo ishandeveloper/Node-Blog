@@ -97,6 +97,10 @@
     color: black;
     /* font-weight: bold; */
 }
+.post-title-mod{
+    font-size: 2.5em;
+    font-weight: 700;
+}
 .compose-hero{
     text-transform: capitalize;
     font-size: 2em;
