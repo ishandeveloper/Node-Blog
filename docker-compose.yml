@@ -1,0 +1,12 @@
+version: "3.7"
+
+services: 
+  node:
+    image: node:12-alpine
+    command: sh -c "npm install && npm start"
+    ports: 
+      - 3000:8080
+    working_dir: /app
+    volumes: 
+      - ./:/app
+
