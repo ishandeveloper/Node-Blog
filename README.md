@@ -34,6 +34,13 @@ npm install
 npm start
 ```
 
+## Docker 
+
+  ##### After cloning the repo and moving to the folder
+```bash
+docker-compose up
+```
+
 ## Requirements to contribute
 
 - Basic knowledge of programming is mandatory
